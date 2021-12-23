@@ -1,0 +1,150 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #f2f2f2;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.main {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.title {
+  margin-top: 40px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.container p {
+  font-size: 1.4rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  padding: 12px 32px;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid transparent;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button--active {
+  color: #f2f1f1;
+  background: rgba(0, 0, 0, 1);
+  border: 2px solid #fff;
+}
+
+.input-container {
+  width: 100%;
+  min-height: 40px;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: transparent;
+}
+.input {
+  width: 100%;
+  min-height: 100%;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  outline: none;
+}
+
+.main h2 {
+  align-self: flex-start;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+textarea {
+  resize: none;
+}
+.output {
+  width: 100%;
+  height: 100%;
+  min-height: 100px;
+  max-height: 250px;
+  position: relative;
+  padding: 32px 20px 12px;
+  background: transparent;
+  border: 1px solid #000;
+  font-size: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
+  text-align: start;
+  line-height: 1.8rem;
+  outline: none;
+  overflow-y: auto;
+}
+
+.output::selection {
+  background: transparent;
+}
+
+.copy {
+  width: 70px;
+  height: 24px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 0 16px;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 0.8rem;
+  text-align: center;
+  z-index: 1001;
+  cursor: pointer;
+}
+.copy-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.copy svg {
+  width: 20px;
+  height: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
