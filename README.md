@@ -11,6 +11,7 @@ A simple realtime input-output character with conversion to Upper case or Lower 
 
 ## Demo Screen
 
+![realtime_char_demo](https://user-images.githubusercontent.com/70554280/147169063-5ae964c4-1837-4891-88ec-fef676311ae6.png)
 
 
 ## Built With
